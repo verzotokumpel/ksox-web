@@ -37,7 +37,7 @@ export default component$(() => {
         <div class="flex mx-auto justify-between max-w-[1400px] py-5 px-5 lg:px-8 text-md ">
 
           <a href="/">
-            <img src={logoNav} alt="logo" width={120} height={60}/>
+            <img src={logoNav} alt="logo" width={120} height={30}/>
           </a>
 
             <div class="hidden lg:flex items-center">
@@ -60,7 +60,7 @@ export default component$(() => {
             </div>
 
             <div class="lg:hidden pt-3" onClick$={() => (mobileNav.value = !mobileNav.value)}>
-              {mobileNav.value ? 
+                {mobileNav.value ? 
                 <div class="flex">
                   <p class="pr-4 pt-1">Close</p>
                   <img src={TimesIcon} alt="close menu icon" width={16} height={16}/>
