@@ -54,12 +54,12 @@ export default component$((props: ModalProps) => {
               )
             ))}
           </div>
-
-          <button class="hidden lg:block text-lg border-2 px-3 rounded-full border-blue-700 hover:border-blue-500 duration-300">
-            <a href={props.linkToApp} target="_blank">
-            Lunch App
-            </a>
-          </button>
+          
+          <a href={props.linkToApp} target="_blank">
+            <button class="hidden lg:block text-lg border-2 px-3 rounded-full border-blue-700 hover:border-blue-500 duration-300">
+              Lunch App
+            </button>
+          </a>
 
             <div class="lg:hidden pt-2" onClick$={() => (mobileNav.value = !mobileNav.value)}>
               {mobileNav.value ? 
