@@ -4,24 +4,23 @@ import DotIcon from '../../assets/icons/DotIcon.svg'
 import BarsIcon from '../../assets/icons/BarsIcon.svg'
 import TimesIcon from '../../assets/icons/TimesIcon.svg'
 
-export default component$(() => {
+interface ModalProps {
+  linkToApp?: string,
+}
+
+export default component$((props: ModalProps) => {
 
   const NavItems = [
     {
+      id: 0,
+      name: "Home",
+      href: "/"
+    },{
       id: 1,
-      name: "Whitepaper",
-    }, {
-      id: 2,
-      name: "About Products",
-    }, {
-      id: 3,
-      name: "Contact",
-    }, {
-      id: 4,
       name: "KSOX Pay",
       href: "/PaymentProcessor"
     }, {
-      id: 5,
+      id: 2,
       name: "KSOX Exchange",
       href: "/Exchange"
     } 
@@ -39,7 +38,7 @@ export default component$(() => {
 
           <div class="hidden lg:flex items-center">
             {NavItems.map((item) => (
-              item.id <= 4 ? (
+              item.id <= 1 ? (
                 <div key={item.id} class="flex">
                   <a href={item.href}>
                   <h3 class="px-5 hover:text-white duration-300">{item.name}</h3>
@@ -55,6 +54,12 @@ export default component$(() => {
               )
             ))}
           </div>
+
+          <button class="text-lg border-2 px-3 rounded-full border-blue-700 hover:border-blue-500 duration-300">
+            <a href={props.linkToApp} target="_blank">
+            Lunch App
+            </a>
+          </button>
 
           <div class="lg:hidden pt-3" onClick$={() => (!mobileNav.value)}>
             {mobileNav ? <img src={TimesIcon} /> : <img src={BarsIcon} />}

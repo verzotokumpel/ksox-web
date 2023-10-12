@@ -3,9 +3,9 @@ import type { DocumentHead } from "@builder.io/qwik-city";
 
 import NavbarHome from "~/components/navbar/NavbarHome";
 import Hero from "~/components/hero/Hero";
-import Footer from "~/components/footer/Footer";
 import InfoBox from "~/components/infobox/InfoBox";
 import InfoBox2 from "~/components/infobox/InfoBox2";
+import Footer from "~/components/footer/Footer";
 
 import PayApp from '../assets/home/PayApp.png'
 import HeroHome from '../assets/home/HeroHome.svg'
@@ -30,7 +30,7 @@ export default component$(() => {
       
       <div class="py-20 bg-white text-[#1D1D1D]">
         <div class="max-w-[1270px] mx-auto px-8 md:px-20 lg:px-0">
-          <h1 class="lg:pl-10 font-bold text-2xl sm:text-4xl text-center lg:text-start">Discover KSOX Products</h1>
+          <h2 class="lg:pl-10 font-bold text-2xl sm:text-4xl text-center lg:text-start">Discover KSOX Products</h2>
           <InfoBox 
           image={PayApp}
           title="KSOX Pay" 
@@ -50,7 +50,7 @@ export default component$(() => {
 
       <div class="py-20">
         <div class="max-w-[1270px] mx-auto px-8 md:px-20 lg:px-0 text-center lg:text-left">
-          <h1 class="lg:pl-10 font-bold text-2xl sm:text-4xl">More About KSOX</h1>
+          <h2 class="lg:pl-10 font-bold text-2xl sm:text-4xl">More About KSOX</h2>
           <p class="pt-5 px-10 sm:text-lg">Our mission at KSOX is to design a user-centric ecosystem that democratizes financial control, retaining its simplicity and decentralized character. Step into the future of finance with KSOX today and embrace a world where financial freedom is not just a dream, but a reality!</p>
          
           <InfoBox2 

@@ -8,5 +8,28 @@
 
 body {
     background-color: #040C18;
-    color: #D9D9D9;                                                
+    color: #D9D9D9;  
+    font-family: "Regular";                                              
 }
+
+h1 {
+    font-family: "Bold";
+}
+
+p {
+    font-family: "Light";
+}
+
+@font-face { 
+    font-family: "Bold"; 
+    src: url("../public/fonts/Sansation_Bold.ttf"); 
+} 
+
+@font-face { 
+    font-family: "Regular"; 
+    src: url("../public/fonts/Sansation_Regular.ttf"); 
+} 
+@font-face { 
+    font-family: "Light"; 
+    src: url("../public/fonts/Sansation_Light.ttf"); 
+} 

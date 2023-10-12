@@ -30,7 +30,7 @@ export default component$((props: ModalProps) => {
                                 </button>
                             </a>
 
-                            <a href={props.link1} target="_blank">
+                            <a href={props.link2} target="_blank">
                                 <button class="sm:text-xl border-2 py-1 px-5 rounded-full hover:bg-gray-900 duration-300">
                                     {props.buttonText2}
                                 </button>
