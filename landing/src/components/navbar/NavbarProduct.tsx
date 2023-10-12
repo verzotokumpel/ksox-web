@@ -55,17 +55,42 @@ export default component$((props: ModalProps) => {
             ))}
           </div>
 
-          <button class="text-lg border-2 px-3 rounded-full border-blue-700 hover:border-blue-500 duration-300">
+          <button class="hidden lg:block text-lg border-2 px-3 rounded-full border-blue-700 hover:border-blue-500 duration-300">
             <a href={props.linkToApp} target="_blank">
             Lunch App
             </a>
           </button>
 
-          <div class="lg:hidden pt-3" onClick$={() => (!mobileNav.value)}>
-            {mobileNav ? <img src={TimesIcon} /> : <img src={BarsIcon} />}
-          </div>  
-
+            <div class="lg:hidden pt-2" onClick$={() => (mobileNav.value = !mobileNav.value)}>
+              {mobileNav.value ? 
+                <div class="flex">
+                  <p class="pr-4 pt-1">Close</p>
+                  <img src={TimesIcon} alt="close menu icon" class="w-[16px]"/>
+                </div> 
+                : 
+                <img src={BarsIcon} alt="open menu icon" class="w-[16px]"/>
+                }
+            </div>  
         </div>
+
+          <div class={mobileNav.value ? 'lg:hidden' : 'hidden'}>
+            <div class="h-screen" style="background: radial-gradient(circle at center bottom, rgb(20, 20, 60) 0%, rgba(40, 100, 255, 0) 60%); top: 0; left: 0; --tw-bg-opacity: 30%;">
+              <div class="mt-20">
+                  {NavItems.map((item) => (
+                  <a href={item.href} class="flex mx-auto justify-center pt-8" onClick$={() => (mobileNav.value = !mobileNav.value)}>
+                    <h2>{item.name}</h2>
+                  </a>
+                  ))}
+              </div>
+              
+              <button class="flex mx-auto mt-8 text-lg border-2 px-3 rounded-full border-blue-700 hover:border-blue-500 duration-300">
+                <a href={props.linkToApp} target="_blank">
+                Lunch App
+                </a>
+              </button>
+            </div>
+          </div>
+
     </div> 
   ) 
 });

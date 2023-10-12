@@ -28,7 +28,7 @@ export default component$(() => {
       link2="https://app.ksox.finance/"
       />
       
-      <div class="py-20 bg-white text-[#1D1D1D]">
+      <div class="py-20 bg-white text-[#1D1D1D]" id="about">
         <div class="max-w-[1270px] mx-auto px-8 md:px-20 lg:px-0">
           <h2 class="lg:pl-10 font-bold text-2xl sm:text-4xl text-center lg:text-start">Discover KSOX Products</h2>
           <InfoBox 

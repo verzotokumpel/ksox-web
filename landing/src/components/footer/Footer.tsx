@@ -28,10 +28,10 @@ export default component$(() => {
 
 
   return(
-    <div class="py-32">
+    <div class="py-32" style="background: radial-gradient(circle at center bottom, rgb(20, 20, 60) 0%, rgba(40, 100, 255, 0) 60%); top: 0; left: 0; --tw-bg-opacity: 30%;">
         <div class="max-w-[1200px] mx-auto px-4 md:px-20 lg:px-10">
 
-        <div class="flex mx-auto justify-center border-2 py-12 rounded-2xl mb-20">
+        <div class="flex mx-auto justify-center border-2 py-12 rounded-2xl mb-20" id="contact">
           <div class="text-center">
             <h1 class="text-2xl sm:text-5xl font-bold">Let's Stay in Touch!</h1>
             <p class="text-base sm:text-xl">Find us Here</p>

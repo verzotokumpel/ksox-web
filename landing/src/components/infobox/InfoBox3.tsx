@@ -1,10 +1,10 @@
 import { component$ } from "@builder.io/qwik";
 
 interface ModalProps {
-    image: string,
-    title: string,
-    text: string,
-    rightSide: boolean,
+    image?: string,
+    title?: string,
+    text?: string,
+    rightSide?: boolean,
 }
 
 export default component$((props: ModalProps) => {
