@@ -26,7 +26,7 @@ export default component$((props: ModalProps) => {
     } 
   ]
 
-  const mobileNav = useSignal(true);
+  const mobileNav = useSignal(false);
 
   return(
     <div class="fixed w-full !z-10 bg-[#040C18] shadow-xl">
