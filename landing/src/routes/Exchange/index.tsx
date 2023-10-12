@@ -1,5 +1,5 @@
 import { component$ } from "@builder.io/qwik";
-import Hero from '../../components/hero/Hero'
+import Hero from "~/components/hero/Hero";
 import ExchangeHero from '../../assets/exchange/ExchangeHero.svg'
 import NavbarProduct from "~/components/navbar/NavbarProduct";
 import Footer from "~/components/footer/Footer";

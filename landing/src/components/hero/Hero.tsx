@@ -39,7 +39,7 @@ export default component$((props: ModalProps) => {
                         </div>
                     </div>
                     <div class="pt-10 lg:pt-0 flex mx-auto lg:mx-0">
-                        <img src={props.image} alt="hero image" class="lg:absolute w-[300px] sm:w-[400px] lg:w-[650px] lg:pr-32 object-contain"/>
+                        <img src={props.image} alt="hero image" class="lg:absolute lg:pr-32 object-contain" width={600} height={400}/>
                     </div>
                 </div>
             </div>

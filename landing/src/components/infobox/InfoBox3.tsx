@@ -18,13 +18,13 @@ export default component$((props: ModalProps) => {
               <p class="text-sm sm:text-lg">{props.text}</p>
             </div>
             <div class="hidden sm:flex">
-              <img src={props.image} />
+              <img src={props.image} width={280} height={300}/>
             </div>
           </>
         ) : (
           <>
             <div class="justify-end pr-10 hidden sm:flex">
-              <img src={props.image}/>
+              <img src={props.image} width={280} height={300}/>
             </div>
             <div class="md:text-right">
               <h2 class="font-semibold text-xl sm:text-3xl pb-2 sm:pb-5 text-transparent bg-clip-text bg-gradient-to-b from-blue-600 to-blue-300">{props.title}</h2>

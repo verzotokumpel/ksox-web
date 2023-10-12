@@ -38,7 +38,7 @@ export default component$(() => {
             <div class="flex justify-between pt-8 sm:pt-14">
               {contactItems.map((item) => (
                 <a key={item.id} href={item.link} target="_blank">
-                  <img src={item.icon} />
+                  <img src={item.icon} width={20} height={20} />
                 </a>
               ))}
             </div>
