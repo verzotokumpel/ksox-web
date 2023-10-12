@@ -3,7 +3,7 @@ import Hero from '../../components/hero/Hero'
 import PayHero from '../../assets/pay/PayHero.svg'
 import NavbarProduct from "~/components/navbar/NavbarProduct";
 import Footer from "~/components/footer/Footer";
-import InfoBox3 from "~/components/infobox/InfoBox3";
+//import InfoBox3 from "~/components/infobox/InfoBox3";
 
 export default component$(() => {
   return(
